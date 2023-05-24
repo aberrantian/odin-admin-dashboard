@@ -69,6 +69,8 @@ body {
 
 	grid-column: 2 / 4;
 	grid-row: 1 / 2;
+
+	padding: 8px 16px;
 }
 
 .sidebar {
@@ -82,4 +84,24 @@ body {
 	background-color: rgb(239, 241, 245);
 
 	grid-column: 2 / 4;
+}
+
+.icon {
+	height: 2rem;
+	width: auto;
+	padding: 4px;
+	margin: 0px 4px;
+}
+
+.icon:hover {
+	background-color: white;
+	border-radius: 1rem;
+	cursor: pointer;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	align-items: center;
 }
