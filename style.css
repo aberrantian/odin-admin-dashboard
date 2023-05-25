@@ -155,6 +155,9 @@ body {
   padding: 8px 16px;
   user-select: none;
   white-space: nowrap;
+
+  display: grid;
+  grid-template-columns: repeat(2);
 }
 
 .sidebar {
@@ -198,31 +201,16 @@ body {
 }
 
 .header-top {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 16px;
 }
 
 .header-top-left,
 .header-top-right {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 .header-top-left {
-  justify-content: left;
-  width: 100%;
 }
 
 .header-top-right {
-  justify-content: right;
-  width: min-content;
-  margin-left: 8rem;
-  white-space: nowrap;
 }
 
 .profile-top-right {
@@ -236,16 +224,9 @@ body {
 .account-image-large {
   height: 4rem;
   width: auto;
-  padding: 4px;
-  margin-right: 8px;
 }
 
 .header-bottom {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .profile-and-greeter {
@@ -255,19 +236,12 @@ body {
 }
 
 .header-buttons {
-  display: flex;
-  flex-direction: row;
-  width: min-content;
-  gap: 1rem;
 }
 
 .header-button {
   background-color: rgb(30, 102, 245);
   padding: 0.7rem 1rem;
   border-radius: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
   cursor: pointer;
   color: white;
