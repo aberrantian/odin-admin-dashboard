@@ -182,13 +182,9 @@ body {
 .icon {
   height: 2rem;
   width: auto;
-  padding: 4px;
-  margin: 0px 4px;
 }
 
 .icon:hover {
-  background-color: white;
-  border-radius: 1rem;
   cursor: pointer;
 }
 
@@ -229,17 +225,19 @@ body {
   white-space: nowrap;
 }
 
+.profile-top-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background-color: grey;
+}
+
 .account-image-large {
   height: 4rem;
   width: auto;
   padding: 4px;
   margin-right: 8px;
-}
-
-.account-image-large:hover {
-  background-color: white;
-  border-radius: 1rem;
-  cursor: pointer;
 }
 
 .header-bottom {
