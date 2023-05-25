@@ -179,9 +179,38 @@ body {
   cursor: pointer;
 }
 
-.row {
+#search-bar {
+  appearance: none;
+  border-radius: 1rem;
+  border: none;
+  height: 1.5rem;
+  padding: 0px 8px;
+  width: 100%;
+}
+
+.header-top {
   display: flex;
   flex-direction: row;
   width: 100%;
   align-items: center;
+  justify-content: space-between;
+}
+
+.header-top-left,
+.header-top-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-top-left {
+  justify-content: left;
+  width: 100%;
+}
+
+.header-top-right {
+  justify-content: right;
+  width: min-content;
+  margin-left: 8rem;
+  white-space: nowrap;
 }
