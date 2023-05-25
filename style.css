@@ -151,6 +151,7 @@ body {
   grid-row: 1 / 2;
 
   padding: 8px 16px;
+  user-select: none;
 }
 
 .sidebar {
@@ -194,6 +195,7 @@ body {
   width: 100%;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 16px;
 }
 
 .header-top-left,
@@ -213,4 +215,54 @@ body {
   width: min-content;
   margin-left: 8rem;
   white-space: nowrap;
+}
+
+.account-image-large {
+  height: 4rem;
+  width: auto;
+  padding: 4px;
+  margin-right: 8px;
+}
+
+.account-image-large:hover {
+  background-color: white;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.header-bottom {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-and-greeter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-buttons {
+  display: flex;
+  flex-direction: row;
+  width: min-content;
+  gap: 1rem;
+}
+
+.header-button {
+  background-color: rgb(30, 102, 245);
+  padding: 0.7rem 1rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+}
+
+.header-button:hover {
+  background-color: rgb(4, 165, 229);
 }
