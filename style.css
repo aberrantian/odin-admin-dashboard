@@ -166,6 +166,10 @@ body {
   gap: 16px;
 }
 
+.header-top-left > .icon {
+  margin-right: 8px;
+}
+
 .header-top-left {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -249,7 +253,7 @@ body {
 .sidebar-main,
 .sidebar-footer {
   display: grid;
-  gap: 16px;
+  gap: 8px;
 }
 
 .main {
@@ -326,17 +330,17 @@ body {
 
 .sidebar-main > li,
 .sidebar-footer > li {
-  cursor: pointer;
-
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: left;
+  padding: 8px;
 }
 
 .sidebar-main > li:hover,
 .sidebar-footer > li:hover {
   background-color: white;
+  cursor: pointer;
 }
 
 .sidebar-main > li > .icon,
