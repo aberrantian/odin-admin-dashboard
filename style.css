@@ -281,7 +281,8 @@ body {
   align-items: center;
   width: min-content;
 
-  background-color: grey;
+  background-color: rgb(64, 160, 43);
+  color: white;
 
   padding-right: 16px;
   margin-left: 16px;
@@ -290,6 +291,7 @@ body {
 
 .profile-top-right:hover {
   background-color: white;
+  color: black;
   cursor: pointer;
 }
 
