@@ -138,8 +138,8 @@ html {
 
 body {
   display: grid;
-  grid-template-columns: minmax(250px, 1fr) 4fr;
-  grid-template-rows: minmax(100px, 1fr) 5fr;
+  grid-template-columns: minmax(min-content, 1fr) 5fr;
+  grid-template-rows: minmax(min-content, 1fr) 5fr;
 
   min-height: 100%;
 
@@ -152,13 +152,16 @@ body {
   grid-column: 2 / 4;
   grid-row: 1 / 2;
 
-  padding: 8px 16px;
+  padding: 0px 32px;
   user-select: none;
   white-space: nowrap;
 
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-template-rows: repeat(2, min-content);
+
+  min-height: 100%;
+  align-content: center;
 }
 
 .header-top-left {
@@ -203,7 +206,7 @@ body {
 
   display: grid;
   grid-template-columns: repeat(3, min-content);
-  grid-template-rows: min-content;
+  grid-template-rows: 1fr;
 
   align-items: center;
   justify-content: end;
@@ -218,6 +221,7 @@ body {
   text-align: center;
   cursor: pointer;
   color: white;
+  margin-left: 16px;
 }
 
 .header-button:hover {
@@ -270,17 +274,34 @@ body {
   width: min-content;
 
   background-color: grey;
+
+  padding-right: 16px;
+  margin-left: 16px;
+  border-radius: 4rem;
 }
 
-.account-image-large {
+.user-icon-large {
   height: 4rem;
   width: auto;
+
+  border-radius: 4rem;
+}
+
+.user-icon-small {
+  height: 2rem;
+  width: auto;
+  margin-right: 8px;
+  border-radius: 4rem;
 }
 
 .profile-and-greeter {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.greeter {
+  margin-left: 16px;
 }
 
 .dashboard > h1 {
