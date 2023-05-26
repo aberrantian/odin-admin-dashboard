@@ -210,6 +210,8 @@ body {
 
   align-items: center;
   justify-content: end;
+
+  gap: 16px;
 }
 
 .header-button {
@@ -218,14 +220,12 @@ body {
   border-radius: 2rem;
   width: min-content;
   height: min-content;
-  text-align: center;
-  cursor: pointer;
   color: white;
-  margin-left: 16px;
 }
 
 .header-button:hover {
   background-color: rgb(4, 165, 229);
+  cursor: pointer;
 }
 
 .sidebar {
@@ -278,6 +278,11 @@ body {
   padding-right: 16px;
   margin-left: 16px;
   border-radius: 4rem;
+}
+
+.profile-top-right:hover {
+  background-color: white;
+  cursor: pointer;
 }
 
 .user-icon-large {
