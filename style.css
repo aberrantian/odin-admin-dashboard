@@ -162,6 +162,8 @@ body {
 
   min-height: 100%;
   align-content: center;
+
+  gap: 16px;
 }
 
 .header-top-left {
@@ -242,6 +244,12 @@ body {
   user-select: none;
 
   padding: 16px;
+}
+
+.sidebar-main,
+.sidebar-footer {
+  display: grid;
+  gap: 16px;
 }
 
 .main {
@@ -327,4 +335,9 @@ body {
 .sidebar-main > li:hover,
 .sidebar-footer > li:hover {
   background-color: white;
+}
+
+.sidebar-main > li > .icon,
+.sidebar-footer > li > .icon {
+  margin-right: 8px;
 }
