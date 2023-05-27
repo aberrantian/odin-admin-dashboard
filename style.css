@@ -480,8 +480,8 @@ body {
 
 .trending-container {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(auto-fit, minmax(50px, min-content));
+  grid-template-columns: repeat(auto-fit, minmax(200px, min-content));
+  grid-template-rows: min-content;
   grid-auto-rows: min-content;
 
   gap: 8px;
@@ -497,6 +497,7 @@ body {
   grid-template-rows: min-content;
 
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .trending-card > .icon {
@@ -504,6 +505,7 @@ body {
   grid-row: 1 / 3;
 
   height: 3rem;
+  margin-right: 8px;
 }
 
 .trending-card > h1 {
