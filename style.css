@@ -274,18 +274,20 @@ body {
 #search-input {
   appearance: none;
   border: none;
-  border-left: solid 2px black;
+  border-left: solid 2px grey;
   border-top-right-radius: 4rem;
   border-bottom-right-radius: 4rem;
   padding: 0px 8px;
-  background-color: green;
+  background-color: rgb(150, 150, 150);
   width: 100%;
+
+  outline: none;
 }
 
 .search-bar {
   display: grid;
   grid-template-columns: min-content 1fr;
-  background-color: blue;
+  background-color: rgb(150, 150, 150);
 
   border-radius: 4rem;
   padding: 0px 4px;
