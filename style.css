@@ -385,11 +385,19 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content 1fr;
+
+  padding: 16px;
+}
+
+.projects > h1 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
 }
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: min-content;
   grid-auto-rows: min-content;
 
@@ -398,6 +406,20 @@ body {
 
 .project-card {
   background-color: white;
+  padding: 16px;
+  overflow: scroll;
+  max-height: min-content;
+}
+
+.project-card-content > h1 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.project-card-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
 }
 
 .announcements {
