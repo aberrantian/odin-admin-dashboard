@@ -133,7 +133,8 @@ End of meyer's reset
 */
 
 html {
-  height: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 
 body {
@@ -141,7 +142,7 @@ body {
   grid-template-columns: minmax(min-content, 1fr) 5fr;
   grid-template-rows: minmax(min-content, 1fr) 5fr;
 
-  min-height: 100%;
+  max-height: 100%;
 
   font-family: sans-serif;
 }
@@ -400,6 +401,9 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: min-content;
   grid-auto-rows: min-content;
+
+  height: 100%;
+  overflow-y: scroll;
 
   gap: 8px;
 }
