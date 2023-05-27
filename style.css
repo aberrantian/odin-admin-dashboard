@@ -417,3 +417,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: min-content 1fr;
 }
+
+/*
+Setup scroll containers for projects, announcements, and trending
+*/
