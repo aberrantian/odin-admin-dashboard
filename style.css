@@ -403,7 +403,6 @@ body {
   grid-auto-rows: min-content;
 
   height: 100%;
-  overflow-y: scroll;
 
   gap: 8px;
 }
@@ -411,7 +410,6 @@ body {
 .project-card {
   background-color: white;
   padding: 16px;
-  overflow: scroll;
   max-height: min-content;
 }
 
@@ -517,7 +515,3 @@ body {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
-
-/*
-Setup scroll containers for projects, announcements, and trending
-*/
